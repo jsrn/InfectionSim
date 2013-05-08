@@ -1,0 +1,66 @@
+body
+{
+	font-family: sans-serif;
+	background: lightblue;
+}
+
+#content
+{
+	float: left;
+}
+
+#blurb, #blurb2
+{
+	width: 200px;
+	float: left;
+	padding: 5px;
+}
+
+#blurb
+{
+	margin-right: 10px;
+}
+
+#blurb2
+{
+	margin-left: 10px;
+}
+
+#control-bar
+{
+	display: block;
+	padding: 5px 10px;
+	overflow: hidden;
+}
+
+.slider
+{
+	margin-top: 10px;
+	width: 150px;
+}
+
+.sliderControl
+{
+	width: 150px;
+	float: left;
+	margin-right: 20px;
+}
+
+#people-field
+{
+	margin-top: 10px;
+	width: 600px;
+	height: 500px;
+	border: solid black 1px;
+}
+
+ul
+{
+	list-style: none;
+	padding-left: 0;
+}
+
+#stats
+{
+	margin-top: 10px;
+}

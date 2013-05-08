@@ -1,0 +1,55 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Infection - A Cheerful Disease Simulator</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="infection.js"></script>
+</head>
+
+<body>
+
+	<div id="blurb">
+		I was thinking about an old assignment from university, and I decided that it would be fun to remake it in JavaScript.
+		<br><br>
+		This is my attempt at a disease simulator - from a starting group of individuals, we model the spread of a disease through the population, and we can see how the different traits of the disease affect its spread.
+		<br>
+		<ul>
+			<li><b>Mortality:</b> How lethal the disease is.</li>
+			<li><b>Recoverability:</b> How likely you are to get over the disease.</li>
+			<li><b>Infectiousness:</b> How effectively the disease passes from person to person.</li>
+		</ul>
+	</div>
+
+	<div id="content">
+		<div id="control-bar">
+			<div class="sliderControl">
+				Mortality:
+				<div class="slider" id="mortalitySlider"></div>
+			</div>
+			<div class="sliderControl">
+				Recoverability:
+				<div class="slider" id="recoverySlider"></div>
+			</div>
+			<div class="sliderControl">
+				Infectiousness:
+				<div class="slider" id="infectionSlider"></div>
+			</div>
+			<div id="reset-button">Reset</div>
+		</div>
+		<canvas id="people-field" width="600" height="500"></canvas>
+	</div>
+
+	<div id="blurb2">
+		Use the three sliders at the top to adjust the different disease stats, and the reset button to reset the population.
+		<br><br>
+		Infected individuals can only infect those close to them, and once an individual has recovered from the disease, they cannot be reinfected.
+
+		<div id="stats"></div>
+	</div>
+</body>
+
+</html>
